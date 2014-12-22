@@ -9,7 +9,7 @@ module PagerDutyNotifications
     def self.settings()  instance.settings; end
 
     def initialize
-      Dotenv.load('.env_development', '.env')
+      Dotenv.load('.env', '.env_development')
     end
 
     def settings
