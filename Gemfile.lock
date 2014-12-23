@@ -4,6 +4,13 @@ GEM
     activesupport (3.2.21)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
+    byebug (3.5.1)
+      columnize (~> 0.8)
+      debugger-linecache (~> 1.2)
+      slop (~> 3.6)
+    coderay (1.1.0)
+    columnize (0.8.9)
+    debugger-linecache (1.2.0)
     dotenv (0.11.1)
       dotenv-deployment (~> 0.0.2)
     dotenv-deployment (0.0.2)
@@ -13,6 +20,7 @@ GEM
       faraday (>= 0.7.4, < 0.10)
     hashie (2.1.2)
     i18n (0.7.0)
+    method_source (0.8.2)
     multi_json (1.10.1)
     multipart-post (2.0.0)
     pager_duty-connection (0.1.0)
@@ -20,7 +28,15 @@ GEM
       faraday (~> 0.8, < 0.10)
       faraday_middleware (~> 0.9.0)
       hashie (>= 1.2, < 2.2)
+    pry (0.10.1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pry-byebug (2.0.0)
+      byebug (~> 3.4)
+      pry (~> 0.10)
     rake (10.3.2)
+    slop (3.6.0)
     terminal-notifier (1.6.2)
 
 PLATFORMS
@@ -31,5 +47,7 @@ DEPENDENCIES
   dotenv
   hashie
   pager_duty-connection
+  pry
+  pry-byebug
   rake
   terminal-notifier

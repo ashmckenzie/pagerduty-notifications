@@ -6,4 +6,6 @@ gem 'pager_duty-connection'
 gem 'terminal-notifier'
 gem 'hashie'
 
+gem 'pry'
+gem 'pry-byebug'
 gem 'rake'

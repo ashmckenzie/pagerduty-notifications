@@ -9,7 +9,7 @@ module PagerDutyNotifications
     def watch
       while true do
         response  = pagerduty.get('incidents', fields: 'id,html_url,trigger_summary_data', status: status)
-        incidents = response.incidents.reject { |x| seen_incidents.include?(x.id) }
+        incidents = response.incidents.reject { |x| seen_incidents.include?(x.id) }.map { |x| Incident.new(x) }
 
         unless incidents.empty?
           print 'x'
